@@ -1,0 +1,38 @@
+.container {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 2.6em 1.6em 2.6em 1.6em;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.panel {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.panel h1 {
+    margin: 0px;
+}
+
+.panel > div {
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.portrait {
+    max-width: 300px;
+    max-height: 300px;
+    box-sizing: border-box;
+}
