@@ -1,4 +1,4 @@
-.stripe {
+header.stripe {
     width: 100%;
     background-color: black;
     color: white;
@@ -7,7 +7,7 @@
 .nav-div {
     max-width: 960px;
     min-height: 60px;
-    padding: 0px 1.6em 0px 1.6em;
+    padding: 0px 1em 0px 1em;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
