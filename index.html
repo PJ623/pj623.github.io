@@ -1,82 +1,144 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
+<html lang="en">
 
 <head>
-    <title>
-        PJ623
-    </title>
-    <link rel="stylesheet" type="text/css" href="css/default.css">
-    <link rel="stylesheet" type="text/css" href="css/content.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <meta charset="UTF-8">
+    <title>Grid Test</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
 </head>
 
 <body>
-    <header class="stripe">
-        <div class="nav-div">
-            <img class="logo" src="assets/images/logo.png" alt="My logo">
+    <div class="stripe">
+        <div id="top-bar">
+            <img src="images/logo.png" id="logo" alt="logo">
             <nav>
                 <ul>
                     <li>
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
                         <a href="#links">Links</a>
                     </li>
                 </ul>
             </nav>
-            <a href="https://github.com/PJ623">
-                <img class="icon" src="assets/images/GitHub-Mark-Light-32px.png" alt="Github">
-            </a>
         </div>
-    </header>
+    </div>
 
-    <!-- make node template style? or just a static page? -->
-
-    <section id="about" class="container yellow">
-        <div class="panel">
-            <div class="fixed">
-                <h1>Hey, I'm PJ!</h1>
-                <p>I'm an aspiring web developer. This site's made without the use of any libraries or frameworks.</p>
-                <br>
-                <h2>Skills</h2>
-                <ul>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <img class="portrait" src="assets/images/newgames2-aoba-game-avy-500.png" alt="portrait">
-        </div>
-    </section>
-
-    <section id="portfolio" class="container pink">
-        <div class="panel">
-            <h1>What can I do?</h1>
-            <p>What's up my dudes? Oh, what up! What's up my dudes? Oh, what up! What's up my dudes? Oh, what up! What's up
-                my dudes? Oh, what up! What's up my dudes? Oh, what up!</p>
-        </div>
-    </section>
-
-    <section id="links" class="container">
-        <div class="panel">
-            <h1>Contact me!</h1>
-            <ul>
-                <li><a href="" target="_blank">LinkedIn</a></li>
-                <li><a href="" target="_blank">GitHub</a></li>
+    <div class="container">
+        <img id="profile-picture" class="modal-target" src="images/lls--leah-2--500.png" alt="profile picture">
+        <section id="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul id="project-list">
+                <li class="project-listing">
+                    <img src="images/projects/pokey.JPG" alt="screenshot">
+                    <div>
+                        <h2>Pokey</h2>
+                        <p>A simple fighting game.</p>
+                        <ul>
+                            <li>
+                                <a href="https://pj623.github.io/pokey/" target="_blank">demo</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/PJ623/pokey" target="_blank">src</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-listing">
+                    <img src="images/projects/pixel-paint.JPG" alt="screenshot">
+                    <div>
+                        <h2>Pixel Paint</h2>
+                        <p>A web app for making pixel art.</p>
+                        <ul>
+                            <li>
+                                <a href="https://pj623.github.io/pixel-paint/" target="_blank">demo</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/PJ623/pixel-paint" target="_blank">src</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-listing">
+                    <img src="images/projects/connect-ed.jpg" alt="screenshot">
+                    <div>
+                        <h2>Connect Education</h2>
+                        <p>Blackboard/Moodle clone. A group project for school. Uses Node.js, MongoDB, Handlebars.js, Bootstrap, jQuery, and Socket.IO.</p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/ConnectedEducation/connect-education" target="_blank">src</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-listing">
+                    <img src="images/projects/snake.jpg" alt="screenshot">
+                    <div>
+                        <h2>Snake</h2>
+                        <p>My clone of the classic game of 'Snake'.</p>
+                        <ul>
+                            <li>
+                                <a href="https://pj623.github.io/snake/" target="_blank">demo</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/PJ623/snake" target="_blank">src</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-listing">
+                    <img src="images/projects/life-counter-terminal.JPG" alt="screenshot">
+                    <div>
+                        <h2>Life Counter Terminal</h2>
+                        <p>A terminal-style life counter for the popular trading card game, Magic: The Gathering.</p>
+                        <ul>
+                            <li>
+                                <a href="https://pj623.github.io/life-counter-terminal/" target="_blank">demo</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/PJ623/life-counter-terminal" target="_blank">src and commands</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-        </div>
-    </section>
-
-    <section class="container">
-        <hr>
-        <footer class="panel">
-            <span>This is a footer!</span>
+        </section>
+        <section id="links">
+            <h1>Links</h1>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Twitter</a>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <hr>
+            <a id="" href="#">
+                <img src="images/GitHub-Mark-32px.png" alt="">
+            </a>
+            <hr>
         </footer>
-    </section>
+    </div>
+    <div id="modal"></div>
+    <script src="modal.js"></script>
 </body>
 
 </html>
