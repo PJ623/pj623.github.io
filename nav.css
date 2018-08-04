@@ -80,6 +80,14 @@ nav a:hover{
             "logo"
             "nav";
     }
+
+    body {
+        background-color: white;
+    }
+
+    .stripe {
+        padding-top: 8px;
+    }
 }
 
 /* PCs and Laptops */

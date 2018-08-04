@@ -6,6 +6,7 @@ body {
 
 #profile-picture {
     margin: 0 auto;
+    max-width: 100%;
 }
 
 section, footer {
@@ -124,7 +125,6 @@ h1, h2 {
 
     #profile-picture {
         grid-area: image;
-        max-width: 100%;
     }
 
     #about {
