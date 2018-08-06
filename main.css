@@ -54,7 +54,7 @@ h1, h2 {
     margin: 8px auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid #f1f1f1;
     align-items: center;
     width: 100%;
 }
@@ -86,6 +86,18 @@ h1, h2 {
 
 .project-listing p {
     text-align: center;
+}
+
+#links-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+#links-list > li {
+    margin: 0 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,5 +163,6 @@ h1, h2 {
     .project-listing {
         width: 421px;
         margin: 8px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     }
 }
