@@ -54,7 +54,7 @@ h1, h2 {
     margin: 8px auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid #f1f1f1;
+    border: 1px solid black;
     align-items: center;
     width: 100%;
 }
@@ -132,7 +132,7 @@ h1, h2 {
     }
 
     .container > * {
-        box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     }
 
     #profile-picture {
@@ -141,6 +141,13 @@ h1, h2 {
 
     #about {
         grid-area: about;
+        display: grid;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas: 
+            "header"
+            "description"
+            "hr"
+            "links";
     }
 
     #projects {
@@ -163,6 +170,6 @@ h1, h2 {
     .project-listing {
         width: 421px;
         margin: 8px;
-        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        /*box-shadow: 1px 1px 4px rgba(0,0,0,0.2);*/
     }
 }
