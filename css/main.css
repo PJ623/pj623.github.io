@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+#banner {
+    padding: 24px 16px;
+}
+
+#banner > span, footer {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner > span.super-big {
+    font-size: 48px;
+}
+
+#banner, footer {
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+.container {
+    display: block;
+    margin: 0 8px;
+}
+
+.container > * {
+    max-width: 100%;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 32px;
+    padding: 16px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .container {
+        width: 768px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    #banner > span.super-big {
+        font-size: 96px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+}

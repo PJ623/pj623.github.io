@@ -1,0 +1,58 @@
+.collection {
+    display: block;
+}
+
+.collection > div {
+    padding: 16px 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.collection > div > img {
+    max-width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.collection > div > span {
+    font-size: 1.4em;
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+
+.collection > div > p {
+    margin: 8px 0;
+}
+
+.collection > div > div > a {
+    margin: 0 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .collection {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .collection > div {
+        padding: 12px;
+        margin: 12px;
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .collection > div {
+        width: 450px;
+    }
+}

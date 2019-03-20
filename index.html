@@ -1,160 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Paolo's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="modal.css">
+    <title>Portfolio 2</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/collection.css">
 </head>
 
 <body>
-    <div class="stripe">
-        <div id="top-bar">
-            <img src="images/logos/logo.png" id="logo" alt="logo">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div id="banner">
+        <span class="super-big">Paolo Jardiolin</span>
+        <span>programmer / web developer</span>
     </div>
 
-    <div class="container">
-        <img id="profile-picture" class="modal-target" src="images/portrait.jpg" alt="profile picture">
-        <section id="about">
+    <section>
+        <div class="container">
             <h1>About</h1>
-            <div>
-                <p>Hey, my name is Paolo Jardiolin.</p>
-                <p>I'm a new graduate looking for work in web and software development.</p>
-            </div>  
+        </div>
+        <div class="container card">
+            <p>I am a new graduate looking for work in software development.</p>
+            <a href="https://github.com/PJ623" target="_blank"><img src="media/images/logos/GitHub-Mark-32px.png"></a>
+        </div>
+    </section>
 
-            <hr>
-            <ul id="links-list">
-                <li>
-                    <a href="https://github.com/PJ623" target="_blank">
-                        <img src="images/logos/GitHub-Mark-64px.png" alt="GitHub logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/paolo-jardiolin-347531162/" target="_blank">
-                        <img src="images/logos/In-2C-66px-R.png" alt="LinkedIn logo">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section id="projects">
+    <section>
+        <div class="container">
             <h1>Projects</h1>
-            <ul id="project-list">
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/pokey.JPG" alt="screenshot">
-                    <div>
-                        <h2>Pokey</h2>
-                        <p>A simple fighting game.</p>
-                        <ul>
-                            <li>
-                                <a href="https://pj623.github.io/pokey/" target="_blank">demo</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PJ623/pokey" target="_blank">src</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/image-keep.JPG" alt="screenshot">
-                    <div>
-                        <h2>Image Keep</h2>
-                        <p>Image Keep is a gallery web application that can store images from the web into browser storage for offline viewing.</p>
-                        <ul>
-                            <li>
-                                <a href="https://pj623.github.io/image-keep/" target="_blank">demo</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PJ623/image-keep" target="_blank">src</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/connect-ed.jpg" alt="screenshot">
-                    <div>
-                        <h2>Connect Education</h2>
-                        <p>Blackboard/Moodle clone. A group project for school. Uses Node.js, MongoDB, Handlebars.js,
-                            Bootstrap,
-                            jQuery, and Socket.IO.</p>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/ConnectedEducation/connect-education" target="_blank">src</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/pixel-paint.JPG" alt="screenshot">
-                    <div>
-                        <h2>Pixel Paint</h2>
-                        <p>A web app for making pixel art.</p>
-                        <ul>
-                            <li>
-                                <a href="https://pj623.github.io/pixel-paint/" target="_blank">demo</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PJ623/pixel-paint" target="_blank">src</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/snake.jpg" alt="screenshot">
-                    <div>
-                        <h2>Snake</h2>
-                        <p>My clone of the classic game of 'Snake'.</p>
-                        <ul>
-                            <li>
-                                <a href="https://pj623.github.io/snake/" target="_blank">demo</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PJ623/snake" target="_blank">src</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="project-listing">
-                    <img class="modal-target" src="images/projects/life-counter-terminal.JPG" alt="screenshot">
-                    <div>
-                        <h2>Life Counter Terminal</h2>
-                        <p>A terminal-style life counter for the popular trading card game, Magic: The Gathering.</p>
-                        <ul>
-                            <li>
-                                <a href="https://pj623.github.io/life-counter-terminal/" target="_blank">demo</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/PJ623/life-counter-terminal" target="_blank">src and
-                                    commands</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <footer>
-            <hr>
-            <a href="https://github.com/PJ623/pj623.github.io" target="_blank">
-                <img src="images/logos/GitHub-Mark-32px.png" alt="GitHub logo">
-            </a>
-            <hr>
-        </footer>
-    </div>
-    <div id="modal"></div>
-    <script src="modal.js"></script>
+        </div>
+        <div id="projects-container" class="container">
+
+            <!-- projects loaded here -->
+        </div>
+    </section>
+
+    <footer>
+        Last updated in March, 2019.
+    </footer>
+
+    <script src="js/compatibility.js"></script>
+    <script id="project-collection-data" type="application/json">
+        {
+            "pokey": {
+                "title": "Pokey",
+                "image": {
+                    "src": "media/images/projects/pokey.jpg",
+                    "alt": "pokey.jpg"
+                },
+                "description": "A simple fighting game.",
+                "links": [
+                    {
+                        "text": "demo",
+                        "href": "https://pj623.github.io/pokey/"
+                    },
+                    {
+                        "text": "src",
+                        "href": "https://github.com/PJ623/pokey"
+                    }
+                ]
+            },
+            "image-keep": {
+                "title": "Image Keep",
+                "image": {
+                    "src": "media/images/projects/image-keep.jpg",
+                    "alt": "image-keep.jpg"
+                },
+                "description": "Image Keep is a gallery web application that can store images from the web into browser storage for offline viewing.",
+                "links": [
+                    {
+                        "text": "demo",
+                        "href": "https://pj623.github.io/image-keep/"
+                    },
+                    {
+                        "text": "src",
+                        "href": "https://github.com/PJ623/image-keep"
+                    }
+                ]
+            },
+            "pixel-paint": {
+                "title": "Pixel Paint",
+                "image": {
+                    "src": "media/images/projects/pixel-paint.jpg",
+                    "alt": "pixel-paint.jpg"
+                },
+                "description": "A web app for making pixel art.",
+                "links": [
+                    {
+                        "text": "demo",
+                        "href": "https://pj623.github.io/pixel-paint/"
+                    },
+                    {
+                        "text": "src",
+                        "href": "https://github.com/PJ623/pixel-paint"
+                    }
+                ]
+            },
+            "connect-education": {
+                "title": "Connect Education",
+                "image": {
+                    "src": "media/images/projects/connect-ed.jpg",
+                    "alt": "connect-ed.jpg"
+                },
+                "description": "Blackboard/Moodle clone. A group project for school. Uses Node.js, MongoDB, Handlebars.js, Bootstrap, jQuery, and Socket.IO.",
+                "links": [
+                    {
+                        "text": "src",
+                        "href": "https://github.com/ConnectedEducation/connect-education"
+                    }
+                ]
+            },
+            "snake": {
+                "title": "Snake",
+                "image": {
+                    "src": "media/images/projects/snake.jpg",
+                    "alt": "snake.jpg"
+                },
+                "description": "My clone of the classic game, 'Snake'.",
+                "links": [
+                    {
+                        "text": "demo",
+                        "href": "https://pj623.github.io/snake/"
+                    },
+                    {
+                        "text": "src",
+                        "href": "https://github.com/PJ623/snake"
+                    }
+                ]
+            },
+            "life-counter-terminal": {
+                "title": "Life Counter Terminal",
+                "image": {
+                    "src": "media/images/projects/life-counter-terminal.jpg",
+                    "alt": "life-counter-terminal.jpg"
+                },
+                "description": "A terminal-style life counter for the popular trading card game, Magic: The Gathering.",
+                "links": [
+                    {
+                        "text": "demo",
+                        "href": "https://pj623.github.io/life-counter-terminal/"
+                    },
+                    {
+                        "text": "src and commands",
+                        "href": "https://github.com/PJ623/life-counter-terminal"
+                    }
+                ]
+            }
+        }
+    </script>
+    <script src="js/modal.js"></script>
+    <script src="js/collection.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
