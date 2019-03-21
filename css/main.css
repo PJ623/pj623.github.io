@@ -21,6 +21,7 @@ h1 {
 
 #banner {
     padding: 24px 16px;
+    margin-bottom: 16px;
 }
 
 #banner > span, footer {
