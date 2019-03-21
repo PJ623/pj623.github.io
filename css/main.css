@@ -84,6 +84,10 @@ section {
     #banner > span.super-big {
         font-size: 96px;
     }
+
+    footer {
+        margin-top: 32px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
