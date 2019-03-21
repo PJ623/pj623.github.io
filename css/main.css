@@ -47,11 +47,12 @@ h1 {
     max-width: 100%;
 }
 
-.card {
+.container.card {
     background-color: white;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     padding: 8px;
     text-align: center;
+    margin: 12px 0 8px 0;
 }
 
 footer {
@@ -69,7 +70,7 @@ section {
         text-align: center;
     }
 
-    .card {
+    .container.card {
         padding: 16px;
     }
 
