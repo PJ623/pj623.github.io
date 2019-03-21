@@ -45,8 +45,7 @@
     }
 
     .collection > div {
-        padding: 12px;
-        margin: 12px;
+        padding: 16px;
         width: 350px;
     }
 }
