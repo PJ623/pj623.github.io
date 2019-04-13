@@ -80,6 +80,17 @@ if (window.matchMedia("(min-width: 768px)").matches) {
             makeClickableImage(collectionImages);
         }
     }, 3600);
+
+    setTimeout(() => {
+        const collectionLinks = projectCollection.getElementsByTagName("a");
+        if (collectionLinks.length > 1) {
+            Array.from(collectionLinks).forEach((a) => {
+                a.style.cursor = "pointer";
+            });
+        } else {
+            collectionLinks.style.cursor = "pointer";
+        }
+    }, 3600);
 } else {
     console.log("mobile");
     // clean up redundant code later
@@ -90,6 +101,15 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         });
     } else {
         sectionLinks.style.cursor = "pointer";
+    }
+
+    const collectionLinks = projectCollection.getElementsByTagName("a");
+    if (collectionLinks.length > 1) {
+        Array.from(collectionLinks).forEach((a) => {
+            a.style.cursor = "pointer";
+        });
+    } else {
+        collectionLinks.style.cursor = "pointer";
     }
 
     const collectionImages = projectCollection.getElementsByTagName("img");
