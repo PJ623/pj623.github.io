@@ -6,3 +6,8 @@
         opacity: 1;
     }
 }
+
+@keyframes black-grey {
+    0% {background-color: black;}
+    100% {background-color: #f1f1f1;}
+}

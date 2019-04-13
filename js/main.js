@@ -54,8 +54,48 @@ var projects = getProjects(JSON.parse(document.getElementById("project-collectio
 projectCollection.addAll(projects.map(function (p) { return makeProjectElement(p); }));
 
 // Makes images viewable in modal.
-function makeClickable(ele) {
+function makeClickableImage(ele) {
     ele.onclick = myModal.show.bind(null, ele);
     ele.style.cursor = "pointer";
 }
-setTimeout(() => { Array.from(projectCollection.getElementsByTagName("img")).forEach(makeClickable); }, 1500);
+
+// Timing style for desktop CSS animations
+if (window.matchMedia("(min-width: 768px)").matches) {
+    setTimeout(() => {
+        const sectionLinks = document.querySelector("section a");
+        if (sectionLinks.length > 1) {
+            Array.from(sectionLinks).forEach((a) => {
+                a.style.cursor = "pointer";
+            });
+        } else {
+            sectionLinks.style.cursor = "pointer";
+        }
+    }, 2000);
+
+    setTimeout(() => {
+        const collectionImages = projectCollection.getElementsByTagName("img");
+        if (collectionImages.length > 1) {
+            Array.from(collectionImages).forEach(makeClickableImage);
+        } else {
+            makeClickableImage(collectionImages);
+        }
+    }, 2100);
+} else {
+    console.log("mobile");
+    // clean up redundant code later
+    const sectionLinks = document.querySelector("section a");
+    if (sectionLinks.length > 1) {
+        Array.from(sectionLinks).forEach((a) => {
+            a.style.cursor = "pointer";
+        });
+    } else {
+        sectionLinks.style.cursor = "pointer";
+    }
+
+    const collectionImages = projectCollection.getElementsByTagName("img");
+    if (collectionImages.length > 1) {
+        Array.from(collectionImages).forEach(makeClickableImage);
+    } else {
+        makeClickableImage(collectionImages);
+    }
+}
