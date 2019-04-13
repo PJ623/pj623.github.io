@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* store in CSS variable */
 }
 
 * {
@@ -15,26 +15,26 @@ h1 {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     padding: 8px;
-    margin: 24x 0;
+    margin: 24px 0;
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
-#banner {
+.banner {
     padding: 24px 16px;
     margin-bottom: 16px;
 }
 
-#banner > span, footer {
+.banner > span, footer {
     display: block;
     font-family: 'Courier New', Courier, monospace;
 }
 
-#banner > span.super-big {
+.banner > span.super-big {
     font-size: 48px;
 }
 
-#banner, footer {
+.banner, footer {
     background-color: black;
     color: white;
     display: block;
@@ -70,12 +70,22 @@ section#projects {
     min-height: 1200px;
 }
 
+#curtain.banner {
+    display: none;
+}
+
+/* find way to not have this query trigger for IE */
 @media only screen and (min-width: 768px) {
+    @keyframes black-grey {
+        0% {background-color: black;}
+        100% {background-color: #f1f1f1;}
+    }
+
     body {
         text-align: center;
         background-color: black;
         animation-name: black-grey;
-        animation-delay: 0.4s;
+        animation-delay: 2.1s;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
@@ -90,7 +100,7 @@ section#projects {
         margin: 0;
     }
 
-    #banner > span.super-big {
+    .banner > span.super-big {
         font-size: 96px;
     }
 
@@ -98,11 +108,20 @@ section#projects {
         margin-top: 32px;
     }
 
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     section#about {
         /* animation */
         opacity: 0;
         animation-name: fade-in;
-        animation-delay: 1s;
+        animation-delay: 2.5s;
         animation-fill-mode: forwards;
         animation-duration: 1s;
     }
@@ -111,13 +130,51 @@ section#projects {
         /* animation */
         opacity: 0;
         animation-name: fade-in;
-        animation-delay: 1.1s;
+        animation-delay: 2.6s;
         animation-fill-mode: forwards;
         animation-duration: 1s;
     }
 
     section a {
         cursor: auto;
+    }
+
+    #top-banner.banner {
+        visibility: hidden;
+    }
+
+    @keyframes lift {
+        0% {top: calc(50% - var(--banner-height)) }
+        100%{top: 0px}
+    }
+
+    .banner, #curtain.banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        --banner-height: 200px;
+        min-height: var(--banner-height);
+        width: 100%;
+    }
+
+    #curtain.banner {
+        position: absolute;
+        width: 100%;
+        top: calc(50% - var(--banner-height));
+        animation-name: lift;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+
+    footer {
+        opacity: 0;
+        animation-name: fade-in;
+        animation-delay: 2.7s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
 }
 

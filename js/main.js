@@ -70,7 +70,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         } else {
             sectionLinks.style.cursor = "pointer";
         }
-    }, 2000);
+    }, 3500);
 
     setTimeout(() => {
         const collectionImages = projectCollection.getElementsByTagName("img");
@@ -79,7 +79,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         } else {
             makeClickableImage(collectionImages);
         }
-    }, 2100);
+    }, 3600);
 } else {
     console.log("mobile");
     // clean up redundant code later
