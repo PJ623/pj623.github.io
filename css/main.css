@@ -111,9 +111,11 @@ section#projects {
     @keyframes fade-in {
         0% {
             opacity: 0;
+            visibility: visible;
         }
         100% {
             opacity: 1;
+            visibility: visible;
         }
     }
 
@@ -135,8 +137,12 @@ section#projects {
         animation-duration: 1s;
     }
 
+    section{
+        visibility: hidden;
+    }
+
     section a {
-        cursor: auto;
+        cursor: pointer;
     }
 
     #top-banner.banner {

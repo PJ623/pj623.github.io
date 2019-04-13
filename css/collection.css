@@ -13,7 +13,7 @@
 .collection > div > img {
     max-width: 100%;
     display: inline-block;
-    cursor: auto;
+    cursor: pointer;
     margin-bottom: 8px;
 }
 
@@ -33,7 +33,7 @@
 
 .collection > div > div > a {
     margin: 0 8px;
-    cursor: auto;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
