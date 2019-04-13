@@ -51,7 +51,7 @@ const projectCollection = makeCollection("collection");
 document.getElementById("projects-container").appendChild(projectCollection);
 
 var projects = getProjects(JSON.parse(document.getElementById("project-collection-data").innerHTML));
-projectCollection.addAll(projects.map(function (p) { return makeProjectElement(p); }));
+projectCollection.addAll(projects.map(makeProjectElement));
 
 // Makes images viewable in modal.
 function makeClickableImage(ele) {
