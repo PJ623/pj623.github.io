@@ -19,7 +19,7 @@ function makeProjectElement(data) {
     const img = document.createElement("img");
     const descP = document.createElement("p");
     const linksDiv = document.createElement("div");
-    
+
     img.src = data.image.src;
     img.alt = data.image.alt;
 
@@ -53,4 +53,9 @@ document.getElementById("projects-container").appendChild(projectCollection);
 var projects = getProjects(JSON.parse(document.getElementById("project-collection-data").innerHTML));
 projectCollection.addAll(projects.map(function (p) { return makeProjectElement(p); }));
 
-Array.from(projectCollection.getElementsByTagName("img")).forEach(function (ele) { ele.onclick = myModal.show.bind(null, ele) });
+// Makes images viewable in modal.
+function makeClickable(ele) {
+    ele.onclick = myModal.show.bind(null, ele);
+    ele.style.cursor = "pointer";
+}
+setTimeout(() => { Array.from(projectCollection.getElementsByTagName("img")).forEach(makeClickable); }, 1500);

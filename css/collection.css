@@ -13,7 +13,7 @@
 .collection > div > img {
     max-width: 100%;
     display: inline-block;
-    cursor: pointer;
+    cursor: auto;
     margin-bottom: 8px;
 }
 
