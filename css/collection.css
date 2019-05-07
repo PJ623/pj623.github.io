@@ -39,7 +39,7 @@
 @media only screen and (min-width: 768px) {
     .collection {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: space-around;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -48,6 +48,7 @@
     .collection > div {
         padding: 16px;
         width: 350px;
+        margin: 8px 16px 16px 8px;
     }
 }
 
